@@ -1,47 +1,42 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт с картинками</title>
+    <title>Photo Scroll</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+
+        .photo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            height: 100vh;
         }
-        .image-container {
-            margin-bottom: 20px;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
+
+        .photo-container img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Мой сайт с картинками</h1>
-        <div class="image-container">
-            <img src="image1.jpg" alt="Описание картинки 1">
-        </div>
-        <div class="image-container">
-            <img src="image2.jpg" alt="Описание картинки 2">
-        </div>
-        <div class="image-container">
-            <img src="image3.jpg" alt="Описание картинки 3">
-        </div>
-        <!-- Добавьте больше картинок по мере необходимости -->
+    <div class="photo-container">
+        <img src="https://otvet.imgsmail.ru/download/54621831_15235ff1be0bc1a363cb0622e8c980fa_800.png" alt="Photo 1">
+        <img src="https://otvet.imgsmail.ru/download/54621831_15235ff1be0bc1a363cb0622e8c980fa_800.png" alt="Photo 2">
+        <img src="https://otvet.imgsmail.ru/download/54621831_15235ff1be0bc1a363cb0622e8c980fa_800.png" alt="Photo 3">
+        <img src="https://otvet.imgsmail.ru/download/54621831_15235ff1be0bc1a363cb0622e8c980fa_800.png" alt="Photo 4">
+        <img src="https://otvet.imgsmail.ru/download/54621831_15235ff1be0bc1a363cb0622e8c980fa_800.png" alt="Photo 5">
+        <img src="https://otvet.imgsmail.ru/download/54621831_15235ff1be0bc1a363cb0622e8c980fa_800.png" alt="Photo 6">
     </div>
 </body>
 </html>
