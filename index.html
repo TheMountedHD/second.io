@@ -28,6 +28,7 @@
             border-radius: 10px;
             overflow: hidden;
             text-decoration: none;
+            transition: transform 0.3s ease;
         }
 
         .button-image {
@@ -39,8 +40,14 @@
             transition: transform 0.3s ease;
         }
 
+        /* Эффект при наведении для мыши */
         .button-image:hover {
             transform: scale(1.05);
+        }
+
+        /* Эффект при нажатии на мобильных устройствах */
+        a:active .button-image {
+            transform: scale(0.95);
         }
     </style>
 </head>
@@ -48,13 +55,13 @@
 
     <div class="button-container">
         <a href="page1.html">
-            <div class="button-image" style="background-image: url('1.png');"></div>
+            <div class="button-image" style="background-image: url('images/1.png');"></div>
         </a>
         <a href="page2.html">
-            <div class="button-image" style="background-image: url('1.png');"></div>
+            <div class="button-image" style="background-image: url('images/1.png');"></div>
         </a>
         <a href="page3.html">
-            <div class="button-image" style="background-image: url('1.png');"></div>
+            <div class="button-image" style="background-image: url('images/1.png');"></div>
         </a>
     </div>
 
