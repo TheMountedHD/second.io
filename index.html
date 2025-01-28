@@ -19,42 +19,58 @@
 
         .menu {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr); /* 3 столбца */
+            gap: 10px; /* Уменьшаем отступы между кнопками */
             width: 80%;
             max-width: 600px;
         }
 
-        .menu a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            background-color: #4caf50;
-            width: 100%;
-            height: 100px;
-            border-radius: 10px;
-            transition: background-color 0.3s;
+        .menu .wide {
+            grid-column: span 2; /* Нижняя кнопка на два столбика */
+            height: 100px; /* Уменьшаем высоту кнопки */
         }
 
-        .menu a:hover {
-            background-color: #45a049;
+        .menu a {
+            display: block;
+            width: 100%;
+            height: 100px; /* Высота кнопок уменьшена */
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .menu a img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Сохраняет пропорции изображения */
         }
     </style>
 </head>
 <body>
     <div class="menu">
-        <a href="page1.html">Page 1</a>
-        <a href="page2.html">Page 2</a>
-        <a href="page3.html">Page 3</a>
-        <a href="page4.html">Page 4</a>
-        <a href="page5.html">Page 5</a>
-        <a href="page6.html">Page 6</a>
-        <a href="page7.html">Page 7</a>
-        <a href="page8.html">Page 8</a>
+        <a href="services.html">
+            <img src="1.png" alt="Сервисы">
+        </a>
+        <a href="rules.html">
+            <img src="1.png" alt="Правила">
+        </a>
+        <a href="reviews.html">
+            <img src="1.png" alt="Отзывы">
+        </a>
+        <a href="contacts.html">
+            <img src="1.png" alt="Контакты">
+        </a>
+        <a href="media.html">
+            <img src="1.png" alt="Медиа">
+        </a>
+        <a href="stickers.html">
+            <img src="1.png" alt="Стикеры">
+        </a>
+        <a href="complaint.html" class="wide">
+            <img src="2.png" alt="Пожаловаться на менеджера">
+        </a>
+        <a href="newpage.html">
+            <img src="1.png" alt="Новая кнопка">
+        </a>
     </div>
 </body>
 </html>
