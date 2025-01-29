@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Столбца с Картинками</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        button {
+            border: none;
+            padding: 0;
+            background: none;
+            cursor: pointer;
+            transition: transform 0.3s ease; /* Плавный переход для увеличения */
+        }
+        button img {
+            width: 400px; /* Размер картинок */
+            height: 200px; /* Размер картинок */
+            transition: transform 0.3s ease; /* Плавный переход для увеличения картинки */
+        }
+        button:hover img {
+            transform: scale(1.1); /* Увеличение картинки при наведении */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="column">
+        <button><img src="1.png" alt="Картинка 1"></button>
+        <button><img src="1.png" alt="Картинка 2"></button>
+        <button><img src="1.png" alt="Картинка 3"></button>
+        <button><img src="1.png" alt="Картинка 4"></button>
+    </div>
+    <div class="column">
+        <button><img src="1.png" alt="Картинка 5"></button>
+        <button><img src="1.png" alt="Картинка 6"></button>
+        <button><img src="1.png" alt="Картинка 7"></button>
+        <button><img src="1.png" alt="Картинка 8"></button>
+    </div>
+</div>
+
+</body>
+</html>
